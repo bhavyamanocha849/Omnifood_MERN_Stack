@@ -18,8 +18,8 @@ module.exports.getCheckout = async (req, res) => {
         quantity: 1
       }
     ],
-    success_url: "http://localhost:3000/home",
-    cancel_url: "https://localhost:3000/login"
+    success_url: "https://omnifood-full-stack.herokuapp.com/home",
+    cancel_url: "https://omnifood-full-stack.herokuapp.com/login"
   });
   res
     .status(201)
