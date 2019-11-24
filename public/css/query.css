@@ -1,0 +1,227 @@
+/* Small desktop  */
+@media only screen and (max-width: 1040px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  section {
+    padding: 1.5% 3.5%;
+  }
+}
+/* Tablets */
+@media only screen and (max-width: 1026px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+  section {
+    padding: 1% 3%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  * {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  hr {
+    width: 8rem;
+    margin-left: 35%;
+  }
+ nav {
+    visibility: hidden;
+    padding: 0.8rem;
+  }
+  nav a {
+    visibility: hidden;
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s ease-in-out;
+  }
+  .topnav a:hover {
+    text-decoration-line: underline;
+    text-decoration-color: #16a085;
+    color: #16a085;
+    transform: scale(1.03);
+  }
+  .button {
+    border: none;
+    padding: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    margin: 0.6rem 0.4rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  .button1 {
+    border-radius: 50px;
+    background-color: #1abc9c;
+    width: 10rem;
+    color: white;
+  }
+  .button1:hover {
+    background-color: #16a085;
+    transform: scale(1.1);
+  }
+
+  .button2 {
+    border-radius: 50px;
+    width: 10rem;
+    color: #1abc9c;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 0.1rem solid #1abc9c;
+  }
+  .button2:hover {
+    background-color: #16a085;
+    color: white;
+    transform: scale(1.1);
+    border: 0.1rem solid #16a085;
+  }
+  .button2:active {
+    background-color: transparent;
+  }
+  section {
+    height: max-content;
+  }
+  .intro {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.4rem;
+  }
+  .intro p {
+    text-align: justify;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: grey;
+    margin-left: 10%;
+    font-size: 1rem;
+    margin-right: 10%;
+  }
+  #article {
+    font-size: 0.8rem;
+  }
+  .article-section {
+    padding: 0.5rem;
+  }
+  .steps-img {
+    width: 80%;
+  }
+  .steps-list {
+    padding: 0.8rem;
+    margin-right: 0rem;
+  }
+  .steps-iphone {
+    padding-left: 20%;
+    margin-top: 3%;
+  }
+
+  .steps-how-to {
+    margin-top: 7%;
+    font-size: 120%;
+  }
+  .steps-list div {
+    margin-right: 5%;
+    margin-top: 2rem;
+    font-size: 120%;
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+    text-align: center;
+    padding-top: 0.8rem;
+    height: 55px;
+    width: 55px;
+    float: left;
+  }
+  .steps-list p {
+    padding: 10%;
+    padding-bottom: 2%;
+    text-align: justify;
+  }
+  .app-img {
+    height: 4rem;
+    margin: 1rem;
+    margin-left: 25%;
+    margin-top: 1rem;
+  }
+  .register-parent {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+  .register-child {
+    margin-left: 2rem;
+    padding: 1rem;
+    margin-bottom: 10%;
+    width: 85%;
+    height: 85%;
+    border: 1px solid white;
+    background: white;
+    border-radius: 10%;
+  }
+  .price {
+    flex-direction: row;
+    color: #16a085;
+  }
+  .register-child .button2 {
+    padding: 0.5rem;
+    margin-left: 1.4rem;
+  }
+  .register-child .button1 {
+    padding: 0.5rem;
+    margin-left: 1.4rem;
+  }
+  input {
+    margin-left: 5%;
+    border: 2px solid #1abc9c;
+    width: 90%;
+    font-size: 1.2rem;
+  }
+  input[type="checkbox"] {
+    margin-left: 10%;
+    padding: 10%;
+    margin-right: 0%;
+  }
+  select {
+    margin-left: 5%;
+    border: 2px solid #1abc9c;
+    width: 90%;
+    font-size: 1.1rem;
+  }
+  .row span {
+      vertical-align: middle;
+  }
+  .row p{
+      margin-left:2%;
+      font-size: 1.2rem;
+  }
+  textarea {
+    border: 2px solid #1abc9c;
+    margin-left: 5%;
+    font-size: 1rem;
+  }
+  .form-wrapper .button1 {
+    margin-left: 31%;
+    margin-top: -1.4rem;
+  }  
+}
+/* @media  only screen and (max-width:1040px){
+    h1{
+        font-size: 1.5rem;
+    }
+    section{
+        padding: 1.5% 3.5%;
+    }
+} */
+/* @media  only screen and (max-width:1040px){
+    h1{
+        font-size: 1.5rem;
+    }
+    section{
+        padding: 1.5% 3.5%;
+    }
+} */

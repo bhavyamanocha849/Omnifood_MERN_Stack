@@ -1,0 +1,34 @@
+extends base
+block content
+  if user
+    section#contact
+        .intro
+            h2 Update Your Password #{user.Name}!
+            hr
+        .form-wrapper
+            form.reset-form(action='#')
+                //- .row
+                //-     p Enter Token
+                //-     input#token(placeholder=' Reset Token' type='text' name='password' required='true')
+                //-     br
+                .row
+                    p Enter current Password
+                    input#currpassword(placeholder=' Current Password' type='password' name='currPassword' required='true')
+                    br
+                .row
+                    p  Enter New Password
+                    input#password(placeholder=' Password' type='password' name='password' required='true')
+                    br
+                .row
+                    p Confirm your Password
+                    input#confirmPassword(placeholder=' Confirm Password' type='password' name='confirmPassword' required='true')
+                    br
+                br
+                br
+                input.button.button1(type='submit' value='Update')
+  else
+    br
+    br
+    br
+    br
+    p Please Login

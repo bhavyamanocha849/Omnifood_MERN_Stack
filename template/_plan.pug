@@ -1,0 +1,37 @@
+extends base
+block content
+  section#register2
+    .intro
+      h2 START EATING HEALTHY TODAY
+      hr
+    .register-parent
+      for plan in plans
+        .register-child
+          .heading
+            p#type #{plan.name}
+            .price
+              .num $#{plan.price}
+              p /month
+            p That&apos;s only 13.30$ per meal
+          hr
+          .register-body
+            .info-wrapper
+              i.fas.fa-check-circle
+              |               1 meal every day
+            .info-wrapper
+              i.fas.fa-check-circle
+              |               Order 24/7
+            .info-wrapper
+              i.fas.fa-check-circle
+              |               Access to newest creations
+            .info-wrapper
+              i.fas.fa-check-circle
+              |               #{plan.ratingsAverage}/#{plan.totalRating}
+            .info-wrapper
+              i.fas.fa-check-circle
+              |               Free Delivery
+          hr
+          if user
+            button.button.button1.bookPlan(onclick="window.location.href = '#plan-bookings' " data-plan-id=`${plan._id}`)  I'm Hungry!
+          else
+           button.button.button1(onclick="window.location.href = '/login' ") Sign Up

@@ -1,0 +1,26 @@
+extends base
+block content
+  if user
+    section#contact
+        .intro
+            h2 Update Your Profile #{user.Name}!
+            hr
+        .form-wrapper
+            form.update-form(action='#')
+                .row
+                    p Name
+                    input#Name(placeholder=' Your new name' type='text' name='Name' required='')
+                    br
+                .row
+                    p Email
+                    input#email(placeholder=' Your Email' type='email' name='email' required='')
+                    br
+                br
+                br
+                input.button.button1(type='submit' value='Update')
+  else
+    br
+    br
+    br
+    br
+    p Please Login

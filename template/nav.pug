@@ -1,0 +1,13 @@
+nav.animated.fadeInm(class='delay-0.5s')
+  a(href='#contact') CONTACT US
+  if user
+    a.logoutBtn(href='#') SIGN OUT, #{user.Name}
+    a(href='/me')
+      img.profile(src='./pics/profile1.jpeg')
+  else
+    a(href='/login') SIGN UP
+  a(href='/home#reviews') REVIEWS
+  a(href='/home#location') OUR CITIES
+  a(href='/home#steps') HOW IT WORKS
+  a(href='/home#two') FOOD DELIVERY
+  a(href='/home#one') HOME

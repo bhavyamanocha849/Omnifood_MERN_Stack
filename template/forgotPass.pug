@@ -1,0 +1,17 @@
+extends base
+block content
+  .login
+    .forgetPass-form
+      h2.heading-secondary.ma-bt-lg Forgot Password
+      form(action="").form.form--login
+        .form__group
+          label.form__label(for='token') Your reset Token
+          input#token.form__input(type='text', name="token", placeholder='Your Token', required)
+        .form__group.ma-bt-md
+          label.form__label(for='password') Password
+          input#password.form__input(type='password',name="password", placeholder='••••••••', required, minlength='2')
+        .form__group.ma-bt-md
+          label.form__label(for='password') Confirm Password
+          input#confirmPassword.form__input(type='password',name="confirmPassword", placeholder='••••••••', required, minlength='2')
+        .form__group
+          button.button.button1 Send Token

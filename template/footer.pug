@@ -1,0 +1,13 @@
+footer
+  .footer-parent
+    ul.footer-text
+      -const footerText=["About us","Blog","Press","ios App","Android App"]
+      for val in footerText
+        li.text-value
+          a=val
+    ul.social-link
+      -const iconText=["fab fa-facebook icon-footer","fab fa-twitter-square icon-footer","fab fa-instagram icon-footer","fab fa-snapchat-square icon-footer"]
+      for val in iconText
+        li(class=val)
+          a(href="#") 
+    p.footer-p Copyright © 2019 Omnifood. All rights reserved.

@@ -1,0 +1,172 @@
+extends base
+block content
+  section#one.animated.fadeIn(class='delay-0.2s')
+  .header-text-box
+    h1
+      | GOODBYE JUNK FOOD.
+      br
+      |           HELLO SUPER HEALTHY MEALS
+    button.button.button2(onclick="window.location.href = '#steps' ")
+      span I&apos;m Hungry
+    button.button.button2(onclick="window.location.href = '#two' ")
+      span Show me More
+  section#two
+    .intro
+      h2 GET FOOD FAST, NOT FAST FOOD
+      hr
+      p
+        | Hello, we&apos;re Omnifood, your new premium food delivery service. We know
+        | you&apos;re always busy. No time for cooking. So let us take care of that,
+        | we&apos;re really good at it. We promise!
+    #article
+      .article-section
+        i.fas.fa-calendar-plus.fa-3x
+        h2 UPTO 365 DAYS/YEAR
+        p
+          | Never cook again! We really mean that. Our subscription plan include
+          | upto 365 days/year coverage. You can also choose to order more
+          | flexibly if that&apos;s your style.
+      .article-section
+        i.fas.fa-shipping-fast.fa-3x
+        h2 READY IN 20 MINUTES
+        p
+          | You&apos;re only twenty minutes away from your delicious and super
+          | healthy meals delivered right to your home. We work with the best
+          | chefs in each town to ensure that you&apos;re 100% happy.
+      .article-section
+        i.fas.fa-carrot.fa-3x
+        h2 100% ORGANIC
+        p
+          | All our vegetables are fresh, organic and local. Animals are raised
+          | without added hormones or antibiotics. Good for your health, the
+          | environment, and it also tastes better!
+      .article-section
+        i.fas.fa-boxes.fa-3x
+        h2 ORDER ANYTHING
+        p
+          | We don&apos;t limit your creativity, which means you can order whatever
+          | you feel like. You can also choose from our menu containing over 100
+          | delicious meals. It&apos;s up to you
+  section#steps
+    .intro
+      h2 HOW IT WORKS &mdash; SIMPLE AS 1, 2, 3
+      hr
+    .steps-parent
+      .steps-iphone
+        img.steps-img(src='./pics/iphone.png' alt='iphone-img')
+      .steps-how-to
+        .steps-list
+          div 1
+          p
+            | Choose the subscription plan that best fits your needs and sign up
+            | today.
+        .steps-list
+          div 2
+          p
+            | Order your delicious meal using our mobile app or website. Or you
+            | can even call us!
+        .steps-list
+          div 3
+          p
+            | Enjoy your meal after less than 20 minutes. See you the next time!
+        a
+          img.app-img(src='./pics/download-app-android.png' alt='')
+        a
+          img.app-img(src='./pics/download-app.svg' alt='')
+  section#location
+    .intro
+      h2 WE ARE CURRENTLY IN THESE CITIES
+      hr
+    #table
+      .table-section
+        .img-wrapper
+          img(src='pics/lisbon.jpeg')
+        p LISBON
+        .info-wrapper
+          i.fas.fa-calendar-plus
+        |               1600+ happy eaters
+        .info-wrapper
+          i.fas.fa-calendar-plus
+          |             1600+ happy eaters
+        .info-wrapper
+          i.fab.fa-twitter
+          a(href='#') @SomeGuyTwitter
+      .table-section
+        .img-wrapper
+          img(src='pics/lisbon.jpeg')
+        p LISBON
+        .info-wrapper
+          i.fas.fa-calendar-plus
+          |             1600+ happy eaters
+        .info-wrapper
+          i.fas.fa-calendar-plus
+          |             1600+ happy eaters
+        .info-wrapper
+          i.fab.fa-twitter
+          a(href='#') @SomeGuyTwitter
+      .table-section
+        .img-wrapper
+          img(src='pics/lisbon.jpeg')
+        p LISBON
+        .info-wrapper
+          i.fas.fa-calendar-plus
+          |             1600+ happy eaters
+        .info-wrapper
+          i.fas.fa-calendar-plus
+          |             1600+ happy eaters
+        .info-wrapper
+          i.fab.fa-twitter
+          a(href='#') @SomeGuyTwitter
+      .table-section
+        .img-wrapper
+          img(src='pics/lisbon.jpeg')
+        p LISBON
+        .info-wrapper
+          i.fas.fa-calendar-plus
+          |             1600+ happy eaters
+        .info-wrapper
+          i.fas.fa-calendar-plus
+          |             1600+ happy eaters
+        .info-wrapper
+          i.fab.fa-twitter
+          a(href='#')  @SomeGuyTwitter
+  section#reviews
+    .intro
+      h2 OUR CUSTOMERS CAN&apos;TLIVE WITHOUT US
+      hr
+    .container
+      .review
+        .apost
+          i.fas.fa-quote-left
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+          | nesciunt ipsam cum, recusandae delectus magni odit deleniti dolore
+          | consequuntur porro quasi modi! Ex quia debitis nisi similique
+          | tempore itaque veniam!
+        .reviewer
+          img.profile(src='./pics/profile1.jpeg' alt='')
+          p Adam Sandlers
+      .review
+        .apost
+          i.fas.fa-quote-left
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+          | nesciunt ipsam cum, recusandae delectus magni odit deleniti dolore
+          | consequuntur porro quasi modi! Ex quia debitis nisi similique
+          | tempore itaque veniam!
+        .reviewer
+          img.profile(src='./pics/profile2.jpeg' alt='')
+          p Khaleesi
+      .review
+        .apost
+          i.fas.fa-quote-left
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+          | nesciunt ipsam cum, recusandae delectus magni odi t deleniti dolore
+          | consequuntur porro quasi modi! Ex quia debitis nisi similique
+          | tempore itaque veniam!
+        .reviewer
+          img.profile(src='./pics/profile3.jpeg' alt='')
+          p Some gal
+  include plans
+  

@@ -1,0 +1,32 @@
+extends base
+block content
+    if user
+        section#profile
+            .intro
+                h2 My Profile
+                hr
+                p
+                    | Hi #{user.Name}! Welcome Back. This is your data.
+            .container-profile
+                .display
+                    img(src='./pics/profile1.jpeg' alt='profile pic')
+                .data
+                    p Name: #{user.Name}
+                    br
+                    p UserName: #{user.userName}
+                    br
+                    p email: #{user.email}
+                    br
+                    p role: #{user.role}
+                    button.button.button1(onclick="window.location.href = '/updateProfile' ")
+                        span Update Profile
+                    button.button.button1(onclick="window.location.href = '/resetPassword' ")
+                        span Reset Password
+                    button.button.button1(onclick="window.location.href = '/plans' ")
+                        span Your Plans
+    else
+        br
+        br
+        br
+        br
+        p Please Login

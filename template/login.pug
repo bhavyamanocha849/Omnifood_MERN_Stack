@@ -1,0 +1,17 @@
+extends base
+block content
+  .login
+    .login-form
+      a(href='/signup')
+        h2.heading-secondary.ma-bt-lg Log into your account
+      form(action="", method="").form.form--login
+        .form__group
+          label.form__label(for='email') Email address
+          input#email.form__input(type='email', name="email", placeholder='you@example.com', required)
+        .form__group.ma-bt-md
+          label.form__label(for='password') Password
+          input#password.form__input(type='password',name="password", placeholder='••••••••', required, minlength='2')
+        .form__group
+          button.button.button1 Login 
+      a(href='/forgetPassword')
+        p Forgot Password?

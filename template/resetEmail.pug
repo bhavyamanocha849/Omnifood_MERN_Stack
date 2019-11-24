@@ -1,0 +1,11 @@
+extends base
+block content
+  .login
+    .forget-form
+      h2.heading-secondary.ma-bt-lg Forgot Password
+      form(action="").form.form--login
+        .form__group
+          label.form__label(for='email') Email address
+          input#email.form__input(type='email', name="email", placeholder='you@example.com', required)
+        .form__group
+          button.button.button1 Send Token
