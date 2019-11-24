@@ -12,7 +12,7 @@ module.exports.getCheckout = async (req, res) => {
       {
         name: `${plan.name}`,
         description: `${plan.description}`,
-        images: ["https://example.com/t-shirt.png"],
+        images: ["https://image.flaticon.com/icons/svg/184/184567.svg"],
         amount: `${plan.price}00`,
         currency: "usd",
         quantity: 1
