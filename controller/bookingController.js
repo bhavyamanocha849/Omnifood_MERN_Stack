@@ -3,7 +3,7 @@ const planModel = require("../model/planmodel");
 module.exports.getCheckout = async (req, res) => {
   var id = req.params["id"];
   const plan = await planModel.findById(id);
-  console.log(plan);
+  // console.log(plan);
   // res.end(plan);
 
   const session = await stripe.checkout.sessions.create({

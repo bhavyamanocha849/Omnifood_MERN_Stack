@@ -2,8 +2,8 @@ extends base
 block content
   .login
     .login-form
-      a(href='/signup')
-        h2.heading-secondary.ma-bt-lg Log into your account
+      //- a(href='/signup')
+      h2.heading-secondary.ma-bt-lg Log into your account
       form(action="", method="").form.form--login
         .form__group
           label.form__label(for='email') Email address
@@ -15,3 +15,5 @@ block content
           button.button.button1 Login 
       a(href='/forgetPassword')
         p Forgot Password?
+      a(href='/signup')
+        p New User?
